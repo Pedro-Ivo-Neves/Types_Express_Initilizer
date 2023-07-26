@@ -1,0 +1,43 @@
+{
+  "name": "ts-init-express",
+  "version": "1.0.0",
+  "description": "CLI lib to create a Express with Typescript project",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pedro-Ivo-Neves/Types_Express_Initilizer.git"
+  },
+  
+  "keywords": [
+    "Typescript",
+    "Express",
+    "cli",
+    "backend"
+  ],
+  
+  "author": "Pedro-Neves",
+  
+  "license": "Apache-2.0",
+
+  "bugs": {
+    "url": "https://github.com/Pedro-Ivo-Neves/Types_Express_Initilizer/issues"
+  },
+
+  "homepage": "https://github.com/Pedro-Ivo-Neves/Types_Express_Initilizer#readme",
+  
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "tsup": "^7.1.0"
+  }
+}
